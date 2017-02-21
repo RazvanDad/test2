@@ -1,0 +1,202 @@
+    1  history
+    2  mkdir test2
+    3  ls -l
+    4  cd test2/
+    5  ls -l
+    6  git remote -v
+    7  git clone https://github.com/Netflix/zuul
+    8  git remote -v
+    9  git status
+   10  git commit -m "test"
+   11  ls -l
+   12  rm -rf zuul/
+   13  ls -l
+   14  cd..
+   15  cd ..
+   16  ls -l
+   17  rm test2/
+   18  rmdir test2/
+   19  ls -l
+   20  git clone https://github.com/Netflix/zuul
+   21  ls -l
+   22  mv zuul/ test2/
+   23  ls -l
+   24  cd test2/
+   25  ls -l
+   26  git remote -v
+   27  git remote add rd https://github.com/RazvanDad/test2
+   28  git remote -v
+   29  git push rd
+   30  git fetch rd
+   31  git remote show rd
+   32  git remote show origin
+   33  git remote -v
+   34  git remote add origin https://github.com/RazvanDad/test2.git
+   35  git push -u origin master
+   36  git push rd
+   37  git push --help
+   38  git remote -v
+   39  pwd
+   40  touch --help
+   41  pwd
+   42  touch test2.sh /c/Users/Zinji/test2
+   43  ls -l
+   44  cat test2.sh
+   45  which bash
+   46  chmod +x test2.sh
+   47  ls -l
+   48  ls -l
+   49  tar --help
+   50  pwd
+   51  find /c/Users/Zinji/test2/ -type f -size +5kb
+   52  find /c/Users/Zinji/test2/ -type f -size +5k
+   53  find /c/Users/Zinji/test2/ -type f -size -5k
+   54  find /c/Users/Zinji/test2/ -type f -size +5k
+   55  tar help
+   56  tar --usage
+   57  ls -l
+   58  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf --null -T tar.gz
+   59  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf --null -T -f tar.gz
+   60  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf tar.gz
+   61  tar --help
+   62  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf --null -T - -f archive.tar.gz
+   63  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czfm --null -T - -f archive.tar.gz
+   64  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf --null -T -M -f archive.tar.gz
+   65  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf --null -TM - -f archive.tar.gz
+   66  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf archive.tar.gz -T
+   67  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf archive.tar.gz -T -
+   68  find /c/Users/Zinji/test2/ -type f -size +5k | tar -vzcf archive.tar.gz --null -T -
+   69  ls -l
+   70  cat archive.tar.gz 
+   71  find /c/Users/Zinji/test2/ -type f -size +5k | tar -vzcf tar.gz --null -T -
+   72  ls -l
+   73  rm tar.gz
+   74  ls -l
+   75  rm archive.tar.gz 
+   76  ls -l
+   77  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf tar.gz --null -T -
+   78  ls -l
+   79  rm tar.gz 
+   80  ls -l
+   81  ./test2.sh 
+   82  ls -l
+   83  ./test2.sh 
+   84  ls -l
+   85  rm tar.gz 
+   86  ls -l
+   87  find --help
+   88  pwd
+   89  find /c/Users/Zinji/test2/ -mtime +7 *.gz
+   90  find /c/Users/Zinji/test2/ -mtime +7 -name "*.gz"
+   91  find /c/Users/Zinji/test2/ -mtime -7 -name "*.gz"
+   92  find /c/Users/Zinji/test2/ -type f -mtime +7
+   93  find /c/Users/Zinji/test2/ -type f -mtime -7
+   94  find /c/Users/Zinji/test2/ -type f -mtime -7 -name "*.gz"
+   95  find /c/Users/Zinji/test2/files* -mtime +5
+   96  find /c/Users/Zinji/test2/ -type f -mtime +5
+   97  find /c/Users/Zinji/test2/ -type f -mtime +7
+   98  find /c/Users/Zinji/test2/*.gz -mtime +5
+   99  find /c/Users/Zinji/test2/ -type f *.gz -mtime +5
+  100  find -type f *.gz /c/Users/Zinji/test2/
+  101  ls -l
+  102  cat --null
+  103  ls -l
+  104  rm --null
+  105  rm ./--null
+  106  ls -l
+  107  find /c/Users/Zinji/test2/ -type f -size +5k
+  108  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf
+  109  tar --help
+  110  find /c/Users/Zinji/test2/ -type f -size +5k | tar -cf
+  111  find /c/Users/Zinji/test2/ -type f -size +5k | tar -cf tar.gz
+  112  find /c/Users/Zinji/test2/ -type f -size +5k
+  113  pwd
+  114  find /c/Users/Zinji/test2/* -mtime +7
+  115  find /c/Users/Zinji/test2/ -type f -mtime +7
+  116  find /c/Users/Zinji/test2/* -mtime +7 -exec ls -l {} \;
+  117  find /c/Users/Zinji/test2/* -mtime -7 -exec ls -l {} \;
+  118  find /c/Users/Zinji/test2/*.xml -mtime -7 -exec ls -l {} \;
+  119  find /c/Users/Zinji/test2/* -mtime -1 -exec ls -l {} \;
+  120  find /c/Users/Zinji/test2/* -mtime +1 -exec ls -l {} \;
+  121  find /c/Users/Zinji/test2/ -mtime -7 -exec -name "*.gz"
+  122  find /c/Users/Zinji/test2/ -mtime -7 -name "*.gz"
+  123  find /c/Users/Zinji/test2/ -mtime -7 -name "tar.gz"
+  124  find /c/Users/Zinji/test2/ -mtime -7 -name ".gz"
+  125  find /c/Users/Zinji/test2/ -mtime -7 -name "*.gz"
+  126  find /c/Users/Zinji/test2/ -mtime +7 -name "*.tar.gz" -exec rm {} \;
+  127  git status
+  128  git add test2.sh 
+  129  git status
+  130  git remote -v
+  131  ls -l
+  132  touch action.log
+  133  ls -l
+  134  find /c/Users/Zinji/test2/ -mtime +7 -name "*.tar.gz" -exec rm {} \; >> action.log
+  135  cat action.log 
+  136  rm archive.tar.gz 
+  137  ls -l
+  138  ./test2.sh 
+  139  ls -l
+  140  rm archive.tar.gz 
+  141  ./test2.sh >> action.log
+  142  ls -l
+  143  cat action.log 
+  144  rm archive.tar.gz 
+  145  ls -l
+  146  find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf tar.gz --null -T - >> action.log
+  147  ls -l
+  148  cat action.log 
+  149  ls -l
+  150  bash -x test2.sh >> action.log
+  151  ls -l
+  152  cat action.log 
+  153  bash -x test2.sh > action.log
+  154  ls -l
+  155  cat action.log 
+  156  ls -l
+  157  echo "find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf tar.gz --null -T - " >> action.log
+  158  ls -l
+  159  cat action.log 
+  160  ls -l
+  161  rm action.log 
+  162  ls -l
+  163  rm archive.tar.gz 
+  164* find /c/Users/Zinji/test2/ -type f -size +5k | tar -czf tar.gz --null -T - >> /c/Users/Zinji/test2/action.log
+  165  ls -l
+  166  cat action.log 
+  167  bash -x test2.sh >> action.log
+  168  ls -l
+  169  bash -x test2.sh >> action.log
+  170  ls -l
+  171  rm archive.tar.gz 
+  172  ls -l
+  173  history
+  174  ls -l
+  175  bash -o xtrace test2.sh 
+  176  ls -l
+  177  git status
+  178  cat test2.sh 
+  179  ls -l
+  180  bash test2.sh 
+  181  ls -l
+  182  cat actions.log 
+  183  ls -l
+  184  rm action.log 
+  185  ls -l
+  186  rm actions.log 
+  187  ls -l
+  188  bash test2.sh 
+  189  ls -l
+  190  rm tar.gz 
+  191  ls -l
+  192  rm actions.log 
+  193  bash test2.sh 
+  194  ls -l
+  195  git status
+  196  git add test2.sh 
+  197  git status
+  198  git commit -m "added test2.sh"
+  199  git status
+  200  git remote -v
+  201  git push rd
+  202  history > history.txt
